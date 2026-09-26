@@ -58,7 +58,7 @@ The producer application does not need to know Diavasi exists.
 
 Client libraries are deliberately small: idiomatic interfaces for joining groups, consuming batches, and acknowledging work. The server owns traversal, dispatch, checkpointing, and recovery; clients should not become separate implementations of that logic.
 
-Future possibilities include `diavasi-go`, `diavasi-js`, and `diavasi-dotnet`. These are potential additions, not a promise of availability.
+Future possibilities include `diavasi-sim`, `diavasi-ruby`, and `diavasi-haskel`. 
 
 Whatever language an application uses, consuming a Diavasi group should feel native to that language.
 
