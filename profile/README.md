@@ -38,6 +38,31 @@ The group owns the traversal. Consumers share the work. Diavasi distributes reco
 
 The producer application does not need to know Diavasi exists.
 
+
+
+## Server and it's client libraries
+
+| Project | Role |
+| --- | --- |
+| [diavasi](https://github.com/diavasis/diavasi) | Core server and consumer-group implementation |
+| [diavasi-c](https://github.com/diavasis/diavasi-c) | C client |
+| [diavasi-dotnet](https://github.com/diavasis/diavasi-dotnet) | C# client |
+| [diavasi-elixir](https://github.com/diavasis/diavasi-elixir) | Elixir & Beam client |
+| [diavasi-go](https://github.com/diavasis/diavasi-go) |Golang client |
+| [diavasi-java](https://github.com/diavasis/diavasi-java) | Java and JVM client |
+| [diavasi-python](https://github.com/diavasis/diavasi-python) | Python client |
+| [diavasi-client](https://github.com/diavasis/diavasi-client) | Native Rust client |
+| [diavasi-zig](https://github.com/diavasis/diavasi-zig) | Zig client |
+
+
+
+Client libraries are deliberately small: idiomatic interfaces for joining groups, consuming batches, and acknowledging work. The server owns traversal, dispatch, checkpointing, and recovery; clients should not become separate implementations of that logic.
+
+Future possibilities include `diavasi-go`, `diavasi-js`, and `diavasi-dotnet`. These are potential additions, not a promise of availability.
+
+Whatever language an application uses, consuming a Diavasi group should feel native to that language.
+
+
 ## The abstraction
 
 ```text
@@ -155,21 +180,6 @@ Its focus is the space between:
 
 Sometimes CDC and a streaming platform are the right answer. Sometimes it is simpler to consume the data where it already lives. Diavasis exists to make that second option practical.
 
-## Projects and ecosystem
-
-| Project | Role |
-| --- | --- |
-| [diavasi](https://github.com/diavasis/diavasi) | Core server and consumer-group implementation |
-| [diavasi-client](https://github.com/diavasis/diavasi-client) | Native Rust client |
-| [diavasi-elixir](https://github.com/diavasis/diavasi-elixir) | Elixir client |
-| [diavasi-python](https://github.com/diavasis/diavasi-python) | Python client |
-| [diavasi-java](https://github.com/diavasis/diavasi-java) | Java and JVM client |
-
-Client libraries are deliberately small: idiomatic interfaces for joining groups, consuming batches, and acknowledging work. The server owns traversal, dispatch, checkpointing, and recovery; clients should not become separate implementations of that logic.
-
-Future possibilities include `diavasi-go`, `diavasi-js`, and `diavasi-dotnet`. These are potential additions, not a promise of availability.
-
-Whatever language an application uses, consuming a Diavasi group should feel native to that language.
 
 ## Get involved
 
