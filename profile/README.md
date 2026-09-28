@@ -50,6 +50,7 @@ The producer application does not need to know Diavasi exists.
 | [diavasi-elixir](https://github.com/diavasis/diavasi-elixir) | Elixir & Beam client |
 | [diavasi-go](https://github.com/diavasis/diavasi-go) |Golang client |
 | [diavasi-java](https://github.com/diavasis/diavasi-java) | Java and JVM client |
+| [diavasi-js](https://github.com/diavasis/diavasi-s) | Javascript and Typescript client |
 | [diavasi-python](https://github.com/diavasis/diavasi-python) | Python client |
 | [diavasi-client](https://github.com/diavasis/diavasi-client) | Native Rust client |
 | [diavasi-zig](https://github.com/diavasis/diavasi-zig) | Zig client |
